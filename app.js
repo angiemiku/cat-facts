@@ -10,10 +10,8 @@ btn.addEventListener("click", async function () {
   }
 });
 
-let link = 'https://catfact.ninja/fact';
-
 async function getData() {
-  let res = await axios.get(link);
+  let res = await axios.get('https://catfact.ninja/fact');
   console.log(res.data.fact);
   return res.data.fact;
 }
